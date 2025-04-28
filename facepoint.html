@@ -147,7 +147,7 @@ async function predictImage() {
     formData.append('file', fileInput.files[0]);
     formData.append('model_type', modelType);
 
-    const response = await fetch('http://workspace.featurize.cn:27453/predict/', {
+    const response = await fetch('http://workspace.featurize.cn:14272/predict/', {
         method: 'POST',
         body: formData
     });
@@ -189,7 +189,7 @@ async function predictVideo() {
     formData.append('file', fileInput.files[0]);
     formData.append('model_type', modelType);
 
-    const response = await fetch('http://workspace.featurize.cn:27453/predict/', {
+    const response = await fetch('http://workspace.featurize.cn:14272/predict/', {
         method: 'POST',
         body: formData
     });
